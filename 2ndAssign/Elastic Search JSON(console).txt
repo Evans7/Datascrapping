@@ -1,0 +1,48 @@
+#index mapping of product
+PUT /product2
+{
+  "mappings": {
+    
+    "product_listing122":
+    {
+      "properties": {
+        "product_name":{
+         "type": "text"
+        },
+        "model_name":{
+          "type": "text"
+        },
+        "product_serial_no":{
+          "type":"long"
+        },
+        "group_associated":{
+          "type":"text"
+        },
+        "product_mrp(rs)":{
+          "type":"long"
+        }
+      }
+    }
+}
+}
+
+#index mapping of group
+PUT /product
+{
+  "mappings": {
+    "group_listing":
+    {
+      "properties": {
+        "group name":{
+         "type": "text"
+        },
+        "group description":{
+          "type": "text"
+        },
+        "isActive":{
+          "type":"text"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+#elasticsearch 7.5.0
+
+#index mapping of group
+PUT /product
+{
+  "mappings":
+    {
+      "properties": {
+        "group_name":{
+         "type": "text"
+        },
+        "group_description":{
+          "type": "text"
+        },
+        "isActive":{
+          "type":"text"
+        }
+      }
+    }
+}
+#index mapping of product
+PUT /product_listing
+{
+  "mappings":
+    {
+      "properties": {
+        "product_name":{
+         "type": "text"
+        },
+        "model_name":{
+          "type": "text"
+        },
+        "product_serial_no":{
+          "type":"long"
+        },
+        "group_associated":{
+          "type":"text"
+        },
+        "product_mrp(rs)":{
+          "type":"long"
+        }
+      }
+    }
+}
