@@ -1,4 +1,4 @@
-# Dataloading
+# Datascrapping
 //ASIGNMENT 1//
 Loading of data from google docs to SQL Chose to downlaod as CSV files, a self-contained SQL file can be found inside the main folder. The names have been kept as product1 for product_listing and group1 for group_listing. 
 product is the name of the database
